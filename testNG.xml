@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Fetch Search Result from Amazon">
+    <test name="Search and get data">
+        <parameter name="category" value="Books"/>
+        <parameter name="itemname" value="data catalog"/>
+        <parameter name="nthresultToPick" value="1"/>
+        <classes>
+            <class name="OpenLink">
+            <methods>
+                <include name="selectCategoryandSearchitem"/>
+                <include name="pickResult"/>
+                <include name="getResultTitle"/>
+                <include name="getAuthorName"/>
+                <include name="getEditionwisePrice"/>
+                <include name="getAverageReview"/>
+                <include name="getStockAvailability"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

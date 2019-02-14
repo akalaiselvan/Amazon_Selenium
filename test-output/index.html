@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Fetch_Search_Result_from_Amazon">
+              <span class="suite-name border-passed">Fetch Search Result from Amazon</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Fetch_Search_Result_from_Amazon">
+                    <span>testNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Fetch_Search_Result_from_Amazon">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Fetch_Search_Result_from_Amazon">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Fetch_Search_Result_from_Amazon">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Fetch_Search_Result_from_Amazon">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Fetch_Search_Result_from_Amazon">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Fetch_Search_Result_from_Amazon">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Fetch_Search_Result_from_Amazon" class="hide-methods passed suite-Fetch_Search_Result_from_Amazon"> (hide)</a> <!-- hide-methods passed suite-Fetch_Search_Result_from_Amazon -->
+                      <a href="#" panel-name="suite-Fetch_Search_Result_from_Amazon" class="show-methods passed suite-Fetch_Search_Result_from_Amazon"> (show)</a> <!-- show-methods passed suite-Fetch_Search_Result_from_Amazon -->
+                    </span>
+                    <div class="method-list-content passed suite-Fetch_Search_Result_from_Amazon">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Fetch_Search_Result_from_Amazon" title="OpenLink" hash-for-method="getAuthorName">getAuthorName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Fetch_Search_Result_from_Amazon" title="OpenLink" hash-for-method="getAverageReview">getAverageReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Fetch_Search_Result_from_Amazon" title="OpenLink" hash-for-method="getEditionwisePrice">getEditionwisePrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Fetch_Search_Result_from_Amazon" title="OpenLink" hash-for-method="getResultTitle">getResultTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Fetch_Search_Result_from_Amazon" title="OpenLink" hash-for-method="getStockAvailability">getStockAvailability</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Fetch_Search_Result_from_Amazon" title="OpenLink" hash-for-method="pickResult(1)">pickResult(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Fetch_Search_Result_from_Amazon" title="OpenLink" hash-for-method="selectCategoryandSearchitem(Books, data catalog)">selectCategoryandSearchitem(Books, data catalog)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Fetch_Search_Result_from_Amazon -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Fetch_Search_Result_from_Amazon" class="panel Fetch_Search_Result_from_Amazon">
+          <div class="suite-Fetch_Search_Result_from_Amazon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">OpenLink</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAuthorName">
+                  </a> <!-- getAuthorName -->
+                  <span class="method-name">getAuthorName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAverageReview">
+                  </a> <!-- getAverageReview -->
+                  <span class="method-name">getAverageReview</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getEditionwisePrice">
+                  </a> <!-- getEditionwisePrice -->
+                  <span class="method-name">getEditionwisePrice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getResultTitle">
+                  </a> <!-- getResultTitle -->
+                  <span class="method-name">getResultTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getStockAvailability">
+                  </a> <!-- getStockAvailability -->
+                  <span class="method-name">getStockAvailability</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pickResult(1)">
+                  </a> <!-- pickResult(1) -->
+                  <span class="method-name">pickResult</span>
+                  <span class="parameters">(1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectCategoryandSearchitem(Books, data catalog)">
+                  </a> <!-- selectCategoryandSearchitem(Books, data catalog) -->
+                  <span class="method-name">selectCategoryandSearchitem</span>
+                  <span class="parameters">(Books, data catalog)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Fetch_Search_Result_from_Amazon-class-passed -->
+        </div> <!-- panel Fetch_Search_Result_from_Amazon -->
+        <div panel-name="test-xml-Fetch_Search_Result_from_Amazon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/dell/Documents/INVEST/Selenium_Amazon/testNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Fetch Search Result from Amazon&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Search and get data&quot;&gt;
+    &lt;parameter name=&quot;itemname&quot; value=&quot;data catalog&quot;/&gt;
+    &lt;parameter name=&quot;category&quot; value=&quot;Books&quot;/&gt;
+    &lt;parameter name=&quot;nthresultToPick&quot; value=&quot;1&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;OpenLink&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;selectCategoryandSearchitem&quot;/&gt;
+          &lt;include name=&quot;pickResult&quot;/&gt;
+          &lt;include name=&quot;getResultTitle&quot;/&gt;
+          &lt;include name=&quot;getAuthorName&quot;/&gt;
+          &lt;include name=&quot;getEditionwisePrice&quot;/&gt;
+          &lt;include name=&quot;getAverageReview&quot;/&gt;
+          &lt;include name=&quot;getStockAvailability&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- OpenLink --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search and get data --&gt;
+&lt;/suite&gt; &lt;!-- Fetch Search Result from Amazon --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Fetch_Search_Result_from_Amazon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Fetch Search Result from Amazon</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Search and get data (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Fetch_Search_Result_from_Amazon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Fetch Search Result from Amazon</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Fetch_Search_Result_from_Amazon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Fetch Search Result from Amazon</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Fetch_Search_Result_from_Amazon');
+function tableData_Fetch_Search_Result_from_Amazon() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'pickResult')
+data.setCell(0, 2, 'OpenLink')
+data.setCell(0, 3, 18164);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'selectCategoryandSearchitem')
+data.setCell(1, 2, 'OpenLink')
+data.setCell(1, 3, 14767);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getResultTitle')
+data.setCell(2, 2, 'OpenLink')
+data.setCell(2, 3, 211);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getEditionwisePrice')
+data.setCell(3, 2, 'OpenLink')
+data.setCell(3, 3, 138);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'getStockAvailability')
+data.setCell(4, 2, 'OpenLink')
+data.setCell(4, 3, 120);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'getAverageReview')
+data.setCell(5, 2, 'OpenLink')
+data.setCell(5, 3, 118);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'getAuthorName')
+data.setCell(6, 2, 'OpenLink')
+data.setCell(6, 3, 83);
+window.suiteTableData['Fetch_Search_Result_from_Amazon']= { tableData: data, tableDiv: 'times-div-Fetch_Search_Result_from_Amazon'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <div id="times-div-Fetch_Search_Result_from_Amazon">
+              </div> <!-- times-div-Fetch_Search_Result_from_Amazon -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Fetch_Search_Result_from_Amazon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Fetch Search Result from Amazon</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getAuthorName</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Author name : [Allison G. Kaplan]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getResultTitle</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Result title : [Catalog It!: A Guide to Cataloging School Library Materials, 3rd Edition]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getEditionwisePrice</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Price : [Kindle
+$63.68, Paperback
+$51.26 - $54.00]</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getStockAvailability</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Stock availability : In Stock.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">getAverageReview</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">avg review : 3.8 out of 5 stars</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Fetch_Search_Result_from_Amazon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Fetch_Search_Result_from_Amazon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">OpenLink</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">getLink</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">selectCategoryandSearchitem(Books, data catalog)</span>
+                <span class="method-start">25017 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">pickResult(1)</span>
+                <span class="method-start">39793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getResultTitle</span>
+                <span class="method-start">57959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAuthorName</span>
+                <span class="method-start">58171 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getEditionwisePrice</span>
+                <span class="method-start">58255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAverageReview</span>
+                <span class="method-start">58394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getStockAvailability</span>
+                <span class="method-start">58513 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

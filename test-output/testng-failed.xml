@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Fetch Search Result from Amazon]">
+  <test thread-count="5" name="Search and get data(failed)">
+    <parameter name="itemname" value="data catalog"/>
+    <parameter name="category" value="Books"/>
+    <parameter name="nthresultToPick" value="1"/>
+    <classes>
+      <class name="OpenLink">
+        <methods>
+          <include name="getStockAvailability"/>
+          <include name="getResultTitle"/>
+          <include name="getLink"/>
+          <include name="getAverageReview"/>
+          <include name="getAuthorName"/>
+          <include name="pickResult" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- OpenLink -->
+    </classes>
+  </test> <!-- Search and get data(failed) -->
+</suite> <!-- Failed suite [Fetch Search Result from Amazon] -->

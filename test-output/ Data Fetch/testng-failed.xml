@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ Data Fetch]">
+  <test thread-count="5" name="Search Item(failed)">
+    <parameter name="itemname" value="data catelog"/>
+    <parameter name="category" value="Books"/>
+    <parameter name="nthresultToPick" value="1"/>
+    <classes>
+      <class name="OpenLink">
+        <methods>
+          <include name="getLink"/>
+          <include name="getDetailsFromResult" invocation-numbers="0"/>
+          <include name="pickResult" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- OpenLink -->
+    </classes>
+  </test> <!-- Search Item(failed) -->
+</suite> <!-- Failed suite [ Data Fetch] -->

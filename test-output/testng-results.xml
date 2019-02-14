@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+    <line>
+      <![CDATA[Starting Test Search and get data]]>
+    </line>
+    <line>
+      <![CDATA[Result title : [Catalog It!: A Guide to Cataloging School Library Materials, 3rd Edition]]]>
+    </line>
+    <line>
+      <![CDATA[Author name : [Allison G. Kaplan]]]>
+    </line>
+    <line>
+      <![CDATA[Price : [Kindle
+$63.68, Paperback
+$51.26 - $54.00]]]>
+    </line>
+    <line>
+      <![CDATA[avg review : 3.8 out of 5 stars]]>
+    </line>
+    <line>
+      <![CDATA[Stock availability : In Stock.]]>
+    </line>
+  </reporter-output>
+  <suite name="Fetch Search Result from Amazon" duration-ms="58641" started-at="2019-02-14T19:14:48 IST" finished-at="2019-02-14T19:15:46 IST">
+    <groups>
+    </groups>
+    <test name="Search and get data" duration-ms="58641" started-at="2019-02-14T19:14:48 IST" finished-at="2019-02-14T19:15:46 IST">
+      <class name="OpenLink">
+        <test-method status="PASS" signature="getLink()[pri:0, instance:OpenLink@3c09711b]" name="getLink" is-config="true" duration-ms="24989" started-at="2019-02-14T19:14:48 IST" finished-at="2019-02-14T19:15:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLink -->
+        <test-method status="PASS" signature="selectCategoryandSearchitem(java.lang.String, java.lang.String)[pri:1, instance:OpenLink@3c09711b]" name="selectCategoryandSearchitem" duration-ms="14767" started-at="2019-02-14T19:15:13 IST" finished-at="2019-02-14T19:15:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Books]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[data catalog]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCategoryandSearchitem -->
+        <test-method status="PASS" signature="pickResult(int)[pri:2, instance:OpenLink@3c09711b]" name="pickResult" duration-ms="18164" started-at="2019-02-14T19:15:28 IST" finished-at="2019-02-14T19:15:46 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pickResult -->
+        <test-method status="PASS" signature="getResultTitle()[pri:3, instance:OpenLink@3c09711b]" name="getResultTitle" duration-ms="211" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Result title : [Catalog It!: A Guide to Cataloging School Library Materials, 3rd Edition]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getResultTitle -->
+        <test-method status="PASS" signature="getAuthorName()[pri:4, instance:OpenLink@3c09711b]" name="getAuthorName" duration-ms="83" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Author name : [Allison G. Kaplan]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getAuthorName -->
+        <test-method status="PASS" signature="getEditionwisePrice()[pri:5, instance:OpenLink@3c09711b]" name="getEditionwisePrice" duration-ms="138" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Price : [Kindle
+$63.68, Paperback
+$51.26 - $54.00]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getEditionwisePrice -->
+        <test-method status="PASS" signature="getAverageReview()[pri:6, instance:OpenLink@3c09711b]" name="getAverageReview" duration-ms="118" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[avg review : 3.8 out of 5 stars]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getAverageReview -->
+        <test-method status="PASS" signature="getStockAvailability()[pri:7, instance:OpenLink@3c09711b]" name="getStockAvailability" duration-ms="120" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Stock availability : In Stock.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getStockAvailability -->
+      </class> <!-- OpenLink -->
+    </test> <!-- Search and get data -->
+  </suite> <!-- Fetch Search Result from Amazon -->
+</testng-results>
