@@ -90,4 +90,9 @@ public class AmazonSearch {
         Reporter.log(log);
         System.out.println(log);
     }
+    
+    @AfterTest
+    private void closeDriver(){
+        driver.close();
+    }
 }
