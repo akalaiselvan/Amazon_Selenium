@@ -1,3 +1,9 @@
+
+
+/*Page Object class for getting data from the search result
+*
+* */
+
 package PageObjects;
 
 import org.openqa.selenium.By;
@@ -24,32 +30,34 @@ public class FetchResults {
 
 
     @FindBy(css = "#atfResults")
-    private WebElement searchResults;
+    private WebElement searchResults;      //element which contains list of results
 
     @FindBy(tagName = "a")
-    private WebElement findAnchorTag;
+    private WebElement findAnchorTag;      // find using html anchor tag
 
     @FindBy(css = "#title")
     private WebElement getTitle;
 
     @FindBy(css = "#mediaTabs_tabSet")
-    private WebElement editionWisePrice;
+    private WebElement editionWisePrice;   // element to get edition wise price
 
     @FindBy(css = "#tmmSwatches")
-    private WebElement editionWisePriceByclass;
+    private WebElement editionWisePriceByclass;  // Second method to get Editionwise price
 
     @FindBy(css = "#bylineInfo")
-    private WebElement authorName;
+    private WebElement authorName;            // element to get author name
 
     @FindBy(css = "#acrPopover")
-    private WebElement customerReview;
+    private WebElement customerReview;        // element to get customer review
 
     @FindBy(css = "#availability")
-    private WebElement stockAvailablity;
+    private WebElement stockAvailablity;      // element for getting stock availability
 
 
 
 
+    /* This method will return the result element's id as
+    * List*/
 
     public List<String> getSearchResultsinList() {
         List<String> searchResult = new ArrayList<String>();
@@ -63,23 +71,37 @@ public class FetchResults {
     }
 
 
+    /*From the search result list it click the
+    nth result based on the input*/
+
     public void clickresult(int nthResult) {
         WebElement element = driver.findElement(By.cssSelector("#" + getSearchResultsinList().get(nthResult)));
         String getAttrib = findAnchorTag.getAttribute("title");
         element.findElement(By.linkText(getAttrib)).click();
     }
 
+
+    /*To get the result title (For example : Book name)*/
     public String getResultTitle() {
         List<String> resultDetails=new ArrayList<String>();
         List<String> getResultTitles = new ArrayList<String>();
         int spancount = 0;
         wait=new WebDriverWait(driver,30);
         wait.until(ExpectedConditions.elementToBeClickable(getTitle));
+
+        /*Getting elements in list based on the html tag 'span'*/
+
         List<WebElement> elementList = getTitle.findElements(By.tagName("span"));
         for (WebElement element : elementList) {
+
+            /*Adding the element's id in list*/
+
             getResultTitles.add(element.getAttribute("id"));
             WebElement webElement;
             try {
+
+                /*From the list of ids,getting the element using css selector*/
+
                 webElement = driver.findElement(By.cssSelector("#" + getResultTitles.get(spancount)));
                 resultDetails.add(webElement.getText());
             } catch (Exception e) {
@@ -108,12 +130,21 @@ public class FetchResults {
         List<String> editionwisePrice=new ArrayList<String>();
         List<WebElement> getspan = null;
         try {
+            /*Using html tag 'li' getting the element */
+
             getspan = editionWisePrice.findElements(By.tagName("li"));
         } catch (Exception e) {
             try {
+
+                /*Editionwise price might get fail in above case, so trying another method*/
+
                 getspan = editionWisePriceByclass.findElements(By.tagName("li"));
             } catch (Exception e1) {
                 e.printStackTrace();
+
+                /*If both method fails it assumes editionwise price is not available
+                * and returns the same*/
+
                 return "Edition wise price not available";            }
             for (WebElement element:getspan){
                 editionwisePrice.add(element.getText());

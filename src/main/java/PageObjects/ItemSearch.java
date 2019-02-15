@@ -10,12 +10,12 @@ public class ItemSearch {
     WebDriver driver;
 
     @FindBy(css = "#searchDropdownBox")
-    private WebElement selectCategoryinSearch;
+    private WebElement selectCategoryinSearch;    /*Category dropdown element*/
 
-    @FindBy(css = "#twotabsearchtextbox")
+    @FindBy(css = "#twotabsearchtextbox")         /*Search box textfield element*/
     private WebElement searchBox;
 
-    @FindBy(css = ".nav-search-submit")
+    @FindBy(css = ".nav-search-submit")            /*Search button*/
     private WebElement searchButton;
 
     public ItemSearch(WebDriver driver){
@@ -23,20 +23,28 @@ public class ItemSearch {
         PageFactory.initElements(driver, this);
     }
 
-    public void selectSearchCategory(String category) {
+
+    /*Selects the category from the dropdown based on the input*/
+
+    private void selectSearchCategory(String category) {
         new Select(selectCategoryinSearch).selectByVisibleText(category);
     }
 
-    public void itemToSearch(String itemName) {
+    /*Search item in the search box textfield based on the credentials*/
+
+    private void itemToSearch(String itemName) {
         searchBox.sendKeys(itemName);
     }
 
-    public void clickSearch() {
+
+    /*To click search button*/
+
+    private void clickSearch() {
         searchButton.click();
     }
 
     public void selectCategoryandSearchItem(String category, String itemname) {
-        //selectSearchCategory(category);
+        selectSearchCategory(category);
         itemToSearch(itemname);
         clickSearch();
     }

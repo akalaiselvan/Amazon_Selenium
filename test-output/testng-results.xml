@@ -26,12 +26,12 @@ $51.26 - $54.00]]]>
     <groups>
     </groups>
     <test name="Search and get data" duration-ms="58641" started-at="2019-02-14T19:14:48 IST" finished-at="2019-02-14T19:15:46 IST">
-      <class name="OpenLink">
-        <test-method status="PASS" signature="getLink()[pri:0, instance:OpenLink@3c09711b]" name="getLink" is-config="true" duration-ms="24989" started-at="2019-02-14T19:14:48 IST" finished-at="2019-02-14T19:15:13 IST">
+      <class name="AmazonSearch">
+        <test-method status="PASS" signature="getLink()[pri:0, instance:AmazonSearch@3c09711b]" name="getLink" is-config="true" duration-ms="24989" started-at="2019-02-14T19:14:48 IST" finished-at="2019-02-14T19:15:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLink -->
-        <test-method status="PASS" signature="selectCategoryandSearchitem(java.lang.String, java.lang.String)[pri:1, instance:OpenLink@3c09711b]" name="selectCategoryandSearchitem" duration-ms="14767" started-at="2019-02-14T19:15:13 IST" finished-at="2019-02-14T19:15:28 IST">
+        <test-method status="PASS" signature="selectCategoryandSearchitem(java.lang.String, java.lang.String)[pri:1, instance:AmazonSearch@3c09711b]" name="selectCategoryandSearchitem" duration-ms="14767" started-at="2019-02-14T19:15:13 IST" finished-at="2019-02-14T19:15:28 IST">
           <params>
             <param index="0">
               <value>
@@ -47,7 +47,7 @@ $51.26 - $54.00]]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCategoryandSearchitem -->
-        <test-method status="PASS" signature="pickResult(int)[pri:2, instance:OpenLink@3c09711b]" name="pickResult" duration-ms="18164" started-at="2019-02-14T19:15:28 IST" finished-at="2019-02-14T19:15:46 IST">
+        <test-method status="PASS" signature="pickResult(int)[pri:2, instance:AmazonSearch@3c09711b]" name="pickResult" duration-ms="18164" started-at="2019-02-14T19:15:28 IST" finished-at="2019-02-14T19:15:46 IST">
           <params>
             <param index="0">
               <value>
@@ -58,21 +58,21 @@ $51.26 - $54.00]]]>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pickResult -->
-        <test-method status="PASS" signature="getResultTitle()[pri:3, instance:OpenLink@3c09711b]" name="getResultTitle" duration-ms="211" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
+        <test-method status="PASS" signature="getResultTitle()[pri:3, instance:AmazonSearch@3c09711b]" name="getResultTitle" duration-ms="211" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
           <reporter-output>
             <line>
               <![CDATA[Result title : [Catalog It!: A Guide to Cataloging School Library Materials, 3rd Edition]]]>
             </line>
           </reporter-output>
         </test-method> <!-- getResultTitle -->
-        <test-method status="PASS" signature="getAuthorName()[pri:4, instance:OpenLink@3c09711b]" name="getAuthorName" duration-ms="83" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
+        <test-method status="PASS" signature="getAuthorName()[pri:4, instance:AmazonSearch@3c09711b]" name="getAuthorName" duration-ms="83" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
           <reporter-output>
             <line>
               <![CDATA[Author name : [Allison G. Kaplan]]]>
             </line>
           </reporter-output>
         </test-method> <!-- getAuthorName -->
-        <test-method status="PASS" signature="getEditionwisePrice()[pri:5, instance:OpenLink@3c09711b]" name="getEditionwisePrice" duration-ms="138" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
+        <test-method status="PASS" signature="getEditionwisePrice()[pri:5, instance:AmazonSearch@3c09711b]" name="getEditionwisePrice" duration-ms="138" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
           <reporter-output>
             <line>
               <![CDATA[Price : [Kindle
@@ -81,21 +81,21 @@ $51.26 - $54.00]]]>
             </line>
           </reporter-output>
         </test-method> <!-- getEditionwisePrice -->
-        <test-method status="PASS" signature="getAverageReview()[pri:6, instance:OpenLink@3c09711b]" name="getAverageReview" duration-ms="118" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
+        <test-method status="PASS" signature="getAverageReview()[pri:6, instance:AmazonSearch@3c09711b]" name="getAverageReview" duration-ms="118" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
           <reporter-output>
             <line>
               <![CDATA[avg review : 3.8 out of 5 stars]]>
             </line>
           </reporter-output>
         </test-method> <!-- getAverageReview -->
-        <test-method status="PASS" signature="getStockAvailability()[pri:7, instance:OpenLink@3c09711b]" name="getStockAvailability" duration-ms="120" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
+        <test-method status="PASS" signature="getStockAvailability()[pri:7, instance:AmazonSearch@3c09711b]" name="getStockAvailability" duration-ms="120" started-at="2019-02-14T19:15:46 IST" finished-at="2019-02-14T19:15:46 IST">
           <reporter-output>
             <line>
               <![CDATA[Stock availability : In Stock.]]>
             </line>
           </reporter-output>
         </test-method> <!-- getStockAvailability -->
-      </class> <!-- OpenLink -->
+      </class> <!-- AmazonSearch -->
     </test> <!-- Search and get data -->
   </suite> <!-- Fetch Search Result from Amazon -->
 </testng-results>

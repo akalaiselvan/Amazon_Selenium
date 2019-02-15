@@ -5,7 +5,7 @@
         <parameter name="itemname" value="data catalog"/>
         <parameter name="nthresultToPick" value="1"/>
         <classes>
-            <class name="OpenLink">
+            <class name="AmazonSearch">
             <methods>
                 <include name="selectCategoryandSearchitem"/>
                 <include name="pickResult"/>

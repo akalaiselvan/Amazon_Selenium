@@ -2,14 +2,16 @@ import PageObjects.FetchResults;
 import PageObjects.ItemSearch;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.TestNG;
 import org.testng.annotations.*;
 
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 @Listeners(ReportClass.class)
-public class OpenLink {
+public class AmazonSearch {
     public  URL url;
     WebDriver driver;
     private ItemSearch itemSearch;
@@ -21,16 +23,23 @@ public class OpenLink {
         return readFromExcel.readFromCell(0,1);
     }
 
+    private String getLink(){
+        return readFromExcel.readFromCell(1,1);
+    }
+
     @BeforeTest
-    public void getLink(){
+    public void initialize(){
+
+        /*Checking assert not null for gecko driver path which is reading from excel file*/
+
+        Assert.assertNotEquals(getGeckoPath(),"","Check gecko path in excel sheet");
         System.setProperty("webdriver.gecko.driver",getGeckoPath());
         driver=new FirefoxDriver();
-        driver.get(readFromExcel.readFromCell(1,1));
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        /*Checking assert for getting link*/
+        Assert.assertNotEquals(getLink(),"","Check link in excel sheet");
+        driver.get(getLink());
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         TestNG testNG=new TestNG();
         testNG.setUseDefaultListeners(true);
     }

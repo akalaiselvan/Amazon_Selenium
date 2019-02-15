@@ -6,7 +6,7 @@
     <parameter name="category" value="Books"/>
     <parameter name="nthresultToPick" value="1"/>
     <classes>
-      <class name="OpenLink">
+      <class name="AmazonSearch">
         <methods>
           <include name="getStockAvailability"/>
           <include name="getResultTitle"/>
@@ -15,7 +15,7 @@
           <include name="getAuthorName"/>
           <include name="pickResult" invocation-numbers="0"/>
         </methods>
-      </class> <!-- OpenLink -->
+      </class> <!-- AmazonSearch -->
     </classes>
   </test> <!-- Search and get data(failed) -->
 </suite> <!-- Failed suite [Fetch Search Result from Amazon] -->
