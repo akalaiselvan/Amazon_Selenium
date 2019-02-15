@@ -4,7 +4,7 @@ Developed the test script using java+selenium+maven with POM model along with Te
 
 ### Test Purpose
 
-      Based on the test input ,it search item in amazon site and get data from the result.
+      Based on the test input ,it search for an item in amazon site and get data from the result clicked.
 
 ### How it works ? 
 
