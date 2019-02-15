@@ -30,3 +30,8 @@ Developed the test script using java+selenium+maven with POM model along with Te
       Page Object model have been used in the test , also used Page Factory to initialize the elements. You can find couple of Page objects one for Amazon search page and other one for Fetching data from the results 
       
       Test will read Gecko driver path and Amazon link from the excel file(TestSheet.xls).Used jxl library file to read text from excel.
+
+## To run in MAC environment 
+
+      Download the gecko driver for mac
+      Mention the gecko path in TestSheet.xls
