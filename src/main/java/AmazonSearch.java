@@ -18,8 +18,7 @@ public class OpenLink {
 
 
     private String getGeckoPath(){
-        String s = readFromExcel.readFromCell(0,1);
-        return s;
+        return readFromExcel.readFromCell(0,1);
     }
 
     @BeforeTest
@@ -42,13 +41,13 @@ public class OpenLink {
     @Parameters({"category","itemname"})
     public void selectCategoryandSearchitem(String category,String itemname){
         itemSearch=new ItemSearch(driver);
-        fetchResults=new FetchResults(driver);
         itemSearch.selectCategoryandSearchItem(category,itemname);
     }
 
     @Test(priority = 2)
     @Parameters({"nthresultToPick"})
     public void pickResult(int nthresultToPick){
+        fetchResults=new FetchResults(driver);
         fetchResults.clickresult(nthresultToPick);
     }
 
