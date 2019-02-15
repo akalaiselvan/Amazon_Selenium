@@ -93,6 +93,6 @@ public class AmazonSearch {
     
     @AfterTest
     private void closeDriver(){
-        driver.close();
+        driver.quit();
     }
 }
